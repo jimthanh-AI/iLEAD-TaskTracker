@@ -17,7 +17,7 @@ export function ActivityModal({ isOpen, onClose, onSave, activity, projects }: A
   const [formData, setFormData] = useState({
     project_id: '',
     name: '',
-    status: 'not_started' as const,
+    status: 'not_started' as Activity['status'],
     stage: 'S1' as const,
     ball_owner: '',
     ca: '',

@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { useAuth } from '@/lib/supabase';
+import { useAuth } from '@/components/AuthProvider';
 import { Sidebar } from '@/components/Sidebar';
 
 export default function DashboardLayout({

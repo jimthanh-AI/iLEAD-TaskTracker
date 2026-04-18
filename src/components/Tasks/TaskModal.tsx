@@ -15,7 +15,7 @@ export function TaskModal({ isOpen, onClose, onSave, task, activities }: TaskMod
   const [formData, setFormData] = useState({
     activity_id: '',
     name: '',
-    status: 'todo' as const,
+    status: 'todo' as Task['status'],
     assignee: '',
     due_date: '',
     notes: '',

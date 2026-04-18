@@ -15,7 +15,7 @@ export function ProjectModal({ isOpen, onClose, onSave, project, partners }: Pro
   const [formData, setFormData] = useState({
     partner_id: '',
     name: '',
-    status: 'not_started' as const,
+    status: 'not_started' as Project['status'],
     sub_code: '',
     start_date: '',
     end_date: '',

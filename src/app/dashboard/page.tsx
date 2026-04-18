@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { supabase, Partner, Project, Activity, Task } from '@/lib/supabase';
-import { useAuth } from '@/lib/supabase';
+import { useAuth } from '@/components/AuthProvider';
 
 interface Stats {
   partnersCount: number;
